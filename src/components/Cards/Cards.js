@@ -1,6 +1,5 @@
 import React,{Component} from 'react';
 import styles from './Cards.module.css';
-import cx from 'classnames';
 import Icons from '../../components/Icons/Icons';
 import Aux from '../../hoc/Aux';
 
@@ -14,7 +13,7 @@ class Cards extends Component{
         const {cardData} = this.props;
         return (
             <Aux>
-                 <div className={styles.Container}>
+                 <div className={styles.ContainerH}>
                     <Icons fill="#008000" icon="NewCases" />
                     <h1 className={styles.AdjustmentH}>COVID-19 Tracker</h1>
                  </div>
@@ -31,13 +30,13 @@ class Cards extends Component{
                         </div>
                         <div className={styles.Card}>
                             <Icons fill="#00FFFF" icon="TotalRecovered" />
-                        <h5>Total Recovered:</h5>
+                            <h5>Total Recovered:</h5>
                             <h2>{cardData.TotalRecovered}</h2>
                         </div>
                     </div>
                     <div className={styles.CardRow}>
                         <div className={styles.Card}>
-                        <Icons fill="#800080" icon="TotalDeaths" />
+                        <Icons fill="#D6FA09" icon="TotalDeaths" />
                             <h5>Total Deaths:</h5>
                             <h2>{cardData.TotalDeaths}</h2>
                         </div>

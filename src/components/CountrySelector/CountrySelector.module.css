@@ -9,12 +9,22 @@
   position: relative;
   margin: 0 auto;
   margin-top: 30px;
+  outline: 0;
 }
 
 .Select{
     border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    outline: 0;
 }
 
-.Select:hover{
-    border: 1px solid rgba(96, 190, 245, 0.5);
+.Select:focus{
+  outline: 0;
+}
+
+
+@media only screen and (max-width: 800px){
+  .ListCountries{
+      width: 70%;
+  }
 }

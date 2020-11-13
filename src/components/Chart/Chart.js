@@ -1,13 +1,13 @@
 import React,{ Component } from 'react';
 import styles from './Chart.module.css';
-import { Bar,Line } from 'react-chartjs-2';
+import { Line } from 'react-chartjs-2';
 
 
 class Chart extends Component{
     render(){
         const { cardData } = this.props;
         return (
-            <div className={styles.Container}>
+            <div className={styles.ContainerC}>
                {
                    cardData.TotalConfirmed ?
                    <Line

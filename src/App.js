@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styles from './App.module.css';
 
 import Aux from './hoc/Aux';
-import { Cards, Carousel, Chart, CountrySelector,Icons,IndiaBreakDown } from './components';
+import { Cards, Chart, CountrySelector,IndiaBreakDown } from './components';
 import { fetchData } from './api';
 
 class App extends Component {
@@ -29,7 +29,7 @@ class App extends Component {
 
   render(){
 
-    const {cardData, country} = this.state;
+    const {cardData} = this.state;
     return (
       <Aux>
         <Cards cardData={cardData} />
